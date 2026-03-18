@@ -1,203 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!----------------------------------------------1. Head---------------------------------------------->
 <head>
     <meta charset="UTF-8">
     <title>(50)TikTok Coins: Buy and Recharge Coins to Send Gifts</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icone.ico"/>
 </head>
+<!----------------------------------------------END 1.----------------------------------------------->
 
 <body>
 
-<header>
-    <div class="logo">
-        <a href="https://tiktok.com"><img src="img/tiktok.png" alt="Logo"></a>
-    </div>
+  <!---------------------------------------------------2. Navigation Bar--------------------------------------------------->
+    <header>
+        <div class="logo">
+            <a href="https://tiktok.com"><img src="img/tiktok.png" alt="Logo"></a>
+        </div>
 
-    <div class="search-bar">
-        <input type="text" placeholder="Search">
-        <a href="#"><div class="search-icon"></div></a>
-    </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <a href="#"><div class="search-icon"></div></a>
+        </div>
 
-    <div class="upload-button">
-        <a href="https://www.tiktok.com/upload?lang=en" class="upload-link">
-            <div class="upload-box">
-                <img src="img/plus.png" alt="Upload" class="upload-icon">
-                <span>Upload</span>
+        <div class="upload-button">
+            <a href="https://www.tiktok.com/upload?lang=en" class="upload-link">
+                <div class="upload-box">
+                    <img src="img/plus.png" alt="Upload" class="upload-icon">
+                    <span>Upload</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="message-button">
+            <div class="message-icon">
+                <a href="https://www.tiktok.com/messages?lang=en"><img src="img/message.png" alt="Messages"></a>
             </div>
-        </a>
-    </div>
+            
+            <div class="inbox-button">
+                <div class="inbox-icon">
+                    <a href="https://www.tiktok.com/messages?lang=en"><img src="img/inbox.png" alt="Inbox"></a>
+                </div>
+            </div>
+            <div class="user-avatar">
+                <img src="img/logo.png" alt="Avatar">
+            </div>
+    </header>
+    <!---------------------------------------------------END 2.----------------------------------------------------->
 
-    <div class="message-button">
-        <div class="message-icon">
-            <a href="https://www.tiktok.com/messages?lang=en"><img src="img/message.png" alt="Messages"></a>
+    <!----------------------------3. Gift Coins---------------------------->
+    <div class="container">
+        <h1>Gift Coins</h1>
+      <div class="input-container">
+        <input class="input2" type="text" placeholder="Enter your username">
+        <button class="buttonwaw">Verify</button>
+      </div>
+    <!-----------------------------------END 3.----------------------------------->
+
+        <!-----------------------------------------------4. Coins----------------------------------------------->
+        <h2>Recharge</h2>
+
+        <div class="grid">
+
+          <!--------------------4.1 - 70 coins - €0.85 -------------------->
+          <button class="grid-item" onclick="updateTotalPrice(0.85)">
+            <img src="img/cointiktok.png" alt="Coin" class="coin-image">
+            <span class="coin-number" value="70">70</span><br>
+            <span class="coin-number-euro">€ 0.85</span>
+          </button>
+          <!-----------------------------END 4.1---------------------------->
+
+          <!--------------------4.2 - 350 coins - €4.85 ------------------->
+          <button class="grid-item" onclick="updateTotalPrice(4.15)">
+            <img src="img/cointiktok.png" alt="Coin" class="coin-image">
+            <span class="coin-number" value="350">350</span><br>
+            <span class="coin-number-euro">€ 4.15</span>
+          </button>
+          <!-----------------------------END 4.2---------------------------->
+
+          <!--------------------4.3 - 700 coins - €8.29 ------------------->
+          <button class="grid-item" onclick="updateTotalPrice(8.29)">
+            <img src="img/cointiktok.png" alt="Coin" class="coin-image">
+            <span class="coin-number" value="700">700</span><br>
+            <span class="coin-number-euro">€ 8.29</span>
+          </button>
+          <!-----------------------------END 4.3---------------------------->
+
+          <!--------------------4.4 - 1400 coins - €16.49 ----------------->
+          <button class="grid-item" onclick="updateTotalPrice(16.49)">
+            <img src="img/cointiktok.png" alt="Coin" class="coin-image">
+            <span class="coin-number" value="1400">1,400</span><br>
+            <span class="coin-number-euro">€ 16.49</span>
+          </button>
+          <!-----------------------------END 4.4---------------------------->
+
+          <!--------------------4.5 - 3500 coins - €41.25 ----------------->
+          <button class="grid-item" onclick="updateTotalPrice(41.25)">
+            <img src="img/cointiktok.png" alt="Coin" class="coin-image">
+            <span class="coin-number" value="3500">3,500</span><br>
+            <span class="coin-number-euro">€ 41.25</span>
+          </button>
+          <!-----------------------------END 4.5---------------------------->
+
+          <!--------------------4.6 - 7000 coins - €82.09 ----------------->
+          <button class="grid-item" onclick="updateTotalPrice(82.09)">
+            <img src="img/cointiktok.png" alt="Coin" class="coin-image">
+            <span class="coin-number" value="7000">7,000</span><br>
+            <span class="coin-number-euro">€ 82.09</span>
+          </button>
+          <!-----------------------------END 4.6---------------------------->
+
+          <!--------------------4.7 - 17500 coins - €205.19 --------------->
+          <button class="grid-item" onclick="updateTotalPrice(205.19)">
+            <img src="img/cointiktok.png" alt="Coin" class="coin-image">
+            <span class="coin-number" value="17500">17,500</span><br>
+            <span class="coin-number-euro">€ 205.19</span>
+          </button>
+          <!-----------------------------END 4.7---------------------------->
+
+          <!---------------------------------------4.8 - Custom Coins ---------------------------------------->
+          <button id="custom-case" class="grid-item" onclick="toggleCustomInput()">
+            <img src="img/cointiktok.png" alt="Coin" class="coin-image-perso">
+            <span id="custom-text" class="coin-number-perso">Custom</span><br>
+            <span id="custom-description" class="coin-number-euro-perso">High amounts supported</span>
+          </button>
+          <!---------------------------------------------END 4.8---------------------------------------------->
+        </div>
+        <!----------------------------------------------------END 4.---------------------------------------------------->
+
+        <!--------------------5. Payment Methods-------------------->
+        <div class="payment-methods">
+          <p>
+            Payment Method
+            <img src="./img/visa.png" alt="Visa">
+            <img src="./img/mc.png" alt="Mastercard">
+            <img src="./img/maestro.png" alt="Maestro">
+            <img src="./img/american.png" alt="American Express">
+            <img src="./img/paypal.png" alt="PayPal">
+          </p>
+        </div>
+        <!--------------------------END 5.-------------------------->
+
+        <!----------------------------------------------------------------------------6. Total----------------------------------------------------------------------------->
+        <div id="total-price"><span class = "total-payement">Total </span><span class ="signeeuro">€ </span><span class="euro" id="total-amount">0</span></p></div>
+        <div class="container">
+        <button id="recharge-button" class = "recharger" onclick="openPaymentPopup">Recharge</button>
+        </div>
+        <button class="support-button"></button>
+        <sup class="tiktok-ae6u8i-SupBadge">50</sup>
+        <!-----------------------------------------------------------------------------END 6.------------------------------------------------------------------------------>
+
+        <!-----------------7. Verification PopUp----------------->
+        <div id="popup-left" class="popup popup-left">
+          <div class="popup-content">
+            <div class="loading-spinner"></div>
+            <p class="popup-text"></p>
+          </div>
         </div>
         
-        <div class="inbox-button">
-            <div class="inbox-icon">
-                <a href="https://www.tiktok.com/messages?lang=en"><img src="img/inbox.png" alt="Inbox"></a>
+        <div id="popup-right" class="popup popup-right">
+          <div class="popup-content">
+            <div class="loading-spinner"></div>
+            <p class="popup-text"></p>
+          </div>
+        </div>
+        <!----------------------END 7.----------------------->
+
+        <!---------------------------------------------8. Payment PopUp--------------------------------------------->
+        <div id="payment-popup" class="popup-paiement">
+          <h2 class="resumer">Order Summary</h2>
+
+          <!------------------------8.1 - Accounts------------------------>
+          <p class="compte">
+              Account <span class="compte2" id="account-name"></span>
+          </p>
+          <p class="compte">
+            Gifted by <span class="compte3">rappel.pourtoii</span>
+          </p>
+          <!---------------------------END 8.1--------------------------->
+
+          <!----8.2 - Separation---->
+          <div class="ligne"></div>
+          <!---------END 8.2-------->
+
+          <!---------------------------------------8.3 - Coins--------------------------------------->
+          <p class="piece">
+            <span id="coin-quantity"></span><span class="piece2" id="coin-price"></span>
+          </p> 
+          <!------------------------------------------END 8.3----------------------------------------->
+
+          <!---------------------------------------8.4 - Total---------------------------------------->
+          <p class="prix">
+               <span id="coin-quantity"> Total </span><span class="prix2" id="coin-price2"></span>
+          </p>
+          <!------------------------------------------END 8.4----------------------------------------->
+
+          <!----8.5 - Separation---->
+          <div class="ligne"></div>
+          <!---------END 8.5-------->
+
+          <!--------------------------------------------8.6 - Payment Method-------------------------------------------->
+          <p class="modepaiement">
+              <span class="selectionne">Select a payment method</span><span class="gerer-span">
+              <a href="#" class="gerer">Manage</a></span>
+            </button>
+          </p>
+          <p class="paypal">
+            <input class="checkbox-paypal" type="checkbox" check>
+            <span class="paypal-checkbox"></span>
+            PayPal <span class="pseudopp">******r12 </span><img class="paypal2" src="./img/paypal.png" alt="PayPal"> 
+          </p>
+          <!----------------------------------------------------END 8.6--------------------------------------------------->
+
+          <!-----------------------------------------8.7 - Terms and Conditions----------------------------------------->
+          <div class="checkbox-container">
+            <div class="checkbox-wrapper">
+              <input class="checkbox" type="checkbox" id="accept-checkbox">
+              <label for="accept-checkbox"></label>
             </div>
+            <div class="blabla-container">
+              <label class="blabla" for="accept-checkbox">By checking this box, I accept the <b>Coins Policy</b> 
+                and request that the Coins be credited to my account immediately. I acknowledge 
+                that I will lose my right of withdrawal once the Coins are used, at which point the contract 
+                will be fully executed. <br><br>By proceeding with this purchase, you confirm that you reside in 
+                the following region or country: <b>France</b></label>
+            </div>
+          </div>
+          <!---------------------------------------------------END 8.7-------------------------------------------------->
+
+          <!----8.8 - Separation---->
+          <div class="ligne"></div>
+          <!---------END 8.8-------->
+
+          <!----------------------------------------8.9 - Pay and Help Buttons---------------------------------------->
+          <div class="button-container">
+            <button class="help-button"><img src="./img/support.png" alt="help" width="19" height="19"></button>
+            <div class="pay-button-container">
+              <button class="pay-button" onclick="Payment()">
+                <span class="loading-spinner"></span>
+                Pay Now
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="user-avatar">
-            <img src="img/logo.png" alt="Avatar">
+      </div>
+         <!---------------------------------------------------END 8.9-------------------------------------------------->
+
+        <!----------------------------------------9. Payment Confirmation----------------------------------------->
+        <div class="loading-spinner"></div>
+        <div id="payment-confirmation-popup" class="popup-paiement"> 
+          <div class="popup-content">
+            <h2 class="resumer">Payment Confirmed<input class="checkbox-paypal2" type="checkbox" check></h2>
+            <p class="compte">
+              Issuer Name <span class="compte3">rappel.pourtoii</span>
+            </p>
+
+            <!----8.8 - Separation---->
+            <div class="ligne"></div>
+            <!---------END 8.8-------->
+
+            <p class="prix">
+              <span id="coin-quantity"> Total </span><span class="prix2" id="coin-price2"><i>Hidden by PayPal</i></span>
+            </p>
+
+            <!----8.8 - Separation---->
+            <div class="ligne"></div>
+            <!---------END 8.8-------->
+
+            <p class="paypal">
+              PayPal <span class="pseudopp">******r12 </span><img class="paypal3" src="./img/paypal.png" alt="PayPal"> 
+            </p>
+
+            <!----8.8 - Separation---->
+            <div class="ligne"></div>
+            <!---------END 8.8-------->
+
+            <p class="blabla">In some cases, coins may take between 30 minutes and 1 hour to be credited. This delay is due to payment verification and the issuer's account. <br>If you encounter any issues, please contact <b><a href="https://support.tiktok.com/en/">support</a></b> or check our <b><a href="https://support.tiktok.com/en/">FAQ</a></b>.</p>
+          </div>
         </div>
-</header>
 
-<div class="container">
-<h1>Gift Coins</h1>
+        <div id="overlay"></div>
+        <!---------------------------------------------------END 9.-------------------------------------------->        
 
-<div class="input-container">
-<input class="input2" type="text" placeholder="Enter your username">
-<button class="buttonwaw">Verify</button>
-</div>
+        <!----------------10. Scripts---------------->
+        <script src="js/montantPerso.js"></script>
+        <script src="js/verif.js"></script>
+        <script src="js/paiement.js"></script>
+        <!------------------END 10.------------------>
 
-<h2>Recharge</h2>
-
-<div class="grid">
-
-<button class="grid-item" onclick="updateTotalPrice(0.85)">
-<img src="img/cointiktok.png" alt="Coin" class="coin-image">
-<span class="coin-number" value="70">70</span><br>
-<span class="coin-number-euro">$ 0.85</span>
-</button>
-
-<button class="grid-item" onclick="updateTotalPrice(4.15)">
-<img src="img/cointiktok.png" alt="Coin" class="coin-image">
-<span class="coin-number" value="350">350</span><br>
-<span class="coin-number-euro">$ 4.15</span>
-</button>
-
-<button class="grid-item" onclick="updateTotalPrice(8.29)">
-<img src="img/cointiktok.png" alt="Coin" class="coin-image">
-<span class="coin-number" value="700">700</span><br>
-<span class="coin-number-euro">$ 8.29</span>
-</button>
-
-<button class="grid-item" onclick="updateTotalPrice(16.49)">
-<img src="img/cointiktok.png" alt="Coin" class="coin-image">
-<span class="coin-number" value="1400">1,400</span><br>
-<span class="coin-number-euro">$ 16.49</span>
-</button>
-
-<button class="grid-item" onclick="updateTotalPrice(41.25)">
-<img src="img/cointiktok.png" alt="Coin" class="coin-image">
-<span class="coin-number" value="3500">3,500</span><br>
-<span class="coin-number-euro">$ 41.25</span>
-</button>
-
-<button class="grid-item" onclick="updateTotalPrice(82.09)">
-<img src="img/cointiktok.png" alt="Coin" class="coin-image">
-<span class="coin-number" value="7000">7,000</span><br>
-<span class="coin-number-euro">$ 82.09</span>
-</button>
-
-<button class="grid-item" onclick="updateTotalPrice(205.19)">
-<img src="img/cointiktok.png" alt="Coin" class="coin-image">
-<span class="coin-number" value="17500">17,500</span><br>
-<span class="coin-number-euro">$ 205.19</span>
-</button>
-
-<button id="custom-case" class="grid-item" onclick="toggleCustomInput()">
-<img src="img/cointiktok.png" alt="Coin" class="coin-image-perso">
-<span id="custom-text" class="coin-number-perso">Custom</span><br>
-<span id="custom-description" class="coin-number-euro-perso">High amounts supported</span>
-</button>
-
-</div>
-
-<div class="payment-methods">
-<p>
-Payment Method
-<img src="./img/visa.png" alt="Visa">
-<img src="./img/mc.png" alt="Mastercard">
-<img src="./img/maestro.png" alt="Maestro">
-<img src="./img/american.png" alt="American Express">
-<img src="./img/paypal.png" alt="PayPal">
-</p>
-</div>
-
-<div id="total-price">
-<span class="total-payement">Total </span>
-<span class="signeeuro">$ </span>
-<span class="euro" id="total-amount">0</span>
-</div>
-
-<div class="container">
-<button id="recharge-button" class="recharger" onclick="openPaymentPopup">Recharge</button>
-</div>
-
-<div id="payment-popup" class="popup-paiement">
-<h2 class="resumer">Order Summary</h2>
-
-<p class="compte">
-Account <span class="compte2" id="account-name"></span>
-</p>
-
-<p class="compte">
-Gifted by <span class="compte3">rappel.pourtoii</span>
-</p>
-
-<div class="ligne"></div>
-
-<p class="piece">
-<span id="coin-quantity"></span><span class="piece2" id="coin-price"></span>
-</p> 
-
-<p class="prix">
-<span id="coin-quantity"> Total </span><span class="prix2" id="coin-price2"></span>
-</p>
-
-<div class="ligne"></div>
-
-<p class="modepaiement">
-<span class="selectionne">Select a payment method</span>
-<span class="gerer-span">
-<a href="#" class="gerer">Manage</a></span>
-</p>
-
-<p class="paypal">
-<input class="checkbox-paypal" type="checkbox" check>
-<span class="paypal-checkbox"></span>
-PayPal <span class="pseudopp">******r12 </span>
-<img class="paypal2" src="./img/paypal.png" alt="PayPal"> 
-</p>
-
-<div class="checkbox-container">
-<div class="checkbox-wrapper">
-<input class="checkbox" type="checkbox" id="accept-checkbox">
-<label for="accept-checkbox"></label>
-</div>
-
-<div class="blabla-container">
-<label class="blabla" for="accept-checkbox">
-By checking this box, I accept the <b>Coins Policy</b> and request that the Coins be credited to my account immediately.
-I acknowledge that I will lose my right of withdrawal once the Coins are used, at which point the contract will be fully executed.
-
-<br><br>
-
-By proceeding with this purchase, you confirm that you reside in the following region or country: <b>United States</b>
-</label>
-</div>
-</div>
-
-<div class="ligne"></div>
-
-<div class="button-container">
-<button class="help-button">
-<img src="./img/support.png" alt="help" width="19" height="19">
-</button>
-
-<div class="pay-button-container">
-<button class="pay-button" onclick="Payment()">
-<span class="loading-spinner"></span>
-Pay Now
-</button>
-</div>
-</div>
-
-</div>
-
-    
 </body>
 </html>
