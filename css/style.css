@@ -985,3 +985,108 @@ header > *:not(:first-child) {
 .pp {
   margin-left: 30px;
 }
+/* ===== MOBILE VERSION ===== */
+
+@media screen and (max-width: 600px){
+
+body{
+padding:10px;
+}
+
+/* HEADER */
+
+header{
+padding:8px;
+justify-content:space-between;
+}
+
+.search-bar{
+display:none;
+}
+
+.upload-button{
+display:none;
+}
+
+.message-button{
+display:none;
+}
+
+/* TITLE */
+
+h1{
+margin:80px 0 10px 0;
+text-align:left;
+font-size:22px;
+}
+
+h2{
+margin:10px 0;
+text-align:left;
+font-size:18px;
+}
+
+/* USERNAME INPUT */
+
+.input-container{
+flex-direction:column;
+align-items:stretch;
+gap:10px;
+}
+
+.input2{
+width:100%;
+margin:0;
+}
+
+.buttonwaw{
+width:100%;
+}
+
+/* COIN GRID */
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin:0;
+}
+
+.grid-item{
+width:100%;
+margin:0;
+height:80px;
+}
+
+/* TOTAL */
+
+#total-price{
+margin-top:20px;
+font-size:18px;
+}
+
+.total-payement{
+margin-left:0;
+}
+
+/* PAYMENT METHODS */
+
+.payment-methods{
+margin:10px 0;
+text-align:left;
+}
+
+/* RECHARGE BUTTON */
+
+.recharger{
+width:100%;
+margin:20px 0;
+}
+
+/* POPUP FIX */
+
+.popup-paiement{
+width:95%;
+min-width:auto;
+}
+
+}
