@@ -108,10 +108,16 @@ font-size:14px;
 border:1px solid #eee;
 border-radius:8px;
 background:#fff;
+padding:5px;
 }
 
 .grid-item:hover{
 border-color:#fe2c55;
+}
+
+.grid-item:active{
+border-color:#fe2c55;
+transform:scale(0.97);
 }
 
 .coin-image{
@@ -207,4 +213,13 @@ color:white;
 border-radius:6px;
 font-weight:bold;
 cursor:pointer;
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
+button{
+touch-action:manipulation;
 }
